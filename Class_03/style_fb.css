@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.fb-page{
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+}
+.fb-page .text{
+    margin-bottom: 90px;
+}
+.fb-page h1{
+    color: #1877f2;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+.fb-page p{
+    font-size: 1.75rem;
+    white-space: nowrap;
+}
