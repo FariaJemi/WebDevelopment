@@ -1,0 +1,19 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 10px;
+} 
+table , th, td{
+    margin: 0 auto;
+    text-align: center;
+    
+    width: 35%;
+    border-collapse: collapse;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+.col1{
+    background-color: plum;
+}
+
