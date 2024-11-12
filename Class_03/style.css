@@ -1,102 +1,76 @@
-/*ul{
-    list-style-type: lower-alpha;
-}
-ol{
-    list-style-type: lower-roman;
-} */
-
-/*ul{
-    list-style-type: none;
-    height: 80px;
-    background-color: #000;
-
-}
-li{
-    /*deprecated 
-    float: inline-start;
-}
-a{
-    text-decoration: none;
-    margin-right: 10px;
-    padding: 10px;
-    color: white;
-    margin-top: 15px;
-    display: block;
-}
-a:hover{
-    color: aqua;
-} */
-
-/*.form-container{
-
-}
-form{
-    background-color: aquamarine;
-    height: 200px;
-    width: 60px;
-    margin: 0 auto;
-
-}
 body{
-    background: center;
-}  */
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
+    font-family: Arial,  sans-serif;
+    background-color: rgb(206, 240, 229);
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
 }
 
-.login-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    width: fit-content;
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 2em;
+    border: 1px solid gainsboro;
+    border-radius: 1em;
+    background-color: white;
+    
+  }
+.form-group form .user{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+.form-group{
+    margin-bottom: 20px;
 }
-
+label{
+    display: block;
+    margin-bottom: 5px;
+    grid-template-columns: auto;
+    flex-direction: row;
+}
+.required::after {
+    content: " *";
+    color: rgb(37, 175, 60);
+}
+input[type="text"],
 input[type="email"],
-input[type="password"] {
-    width: calc(100% - 20px);
+textarea {
+    width: calc(100% - 22px);
     padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: none;
-    box-shadow: rgb(134, 73, 73);
-    outline: rgb(132, 107, 107);
-    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea {
+    height: 100px;
+}
+.query {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+  
+  .query input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+.form-group{
+    flex-direction: row;
 }
 
-.login-btn {
-    background-color: #007bff;
-    color: white;
+button {
+    background-color: #17ac6c;
+    color: #fff;
     border: none;
-    padding: 10px;
-    width: 100%;
+    padding: 10px 20px;
+    border-radius: 3px;
     cursor: pointer;
-    display: block;
-}
+    
+  }
+  
+ 
 
-.create-btn {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    cursor: pointer;
-    display: block;
-}
-
-.login-container p {
-    text-align: center;
-    margin-top: 15px;
-    color: #606770;
-    font-size: 14px;
-}
-
-
-            

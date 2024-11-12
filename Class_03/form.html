@@ -3,40 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Form Design</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-  <!--- <div class="login-container">
-    <form action="#">
-      <input type="email" placeholder="Email address or phone number" id="username" required>
-      <input type="password" placeholder="Password" id="password" required>
-  
-      <button type="button" class="btn">Log in</button>
-  
-      <p><a href="#">Forgotten password?</a></p>
-      <hr>
-  
-      <button type="button" class="btn1">Create new account</button>
-    </form>
-  
-    <p><b>Create a page</b> for a celebrity, brand or business.</p>
-  
+    
 
-  </div> --->
+    <form action="">
+        <h2>Contact Us</h2>
+        <div class="form-group">
+            <div class="user">
+                <label for="first-name" class="required"><span>First Name</span></label>
+                <input type="text" id="first-name" name="first-name" required>
+                <label for="last-name" class="required">Last Name<span></span></label>
+                <input type="text" id="last-name" name="last-name" required>
 
-  <div class="login-container">
-    <form action="#" method="post">
-        <input type="email" placeholder="Email address or phone number" required>
-        <input type="password" placeholder="Password" required>
-        <button type="submit" class="login-btn">Log in</button>
-        <p><a href="#">Forgotten password?</a></p>
-        <button class="create-btn">Create new account</button>
+            </div>
+            
+        </div>
+        <div class="form-group">
+            <label for="email" class="required">Email</label>
+            <input type="email" id="email" name="email"  required>
+        </div>
+        <div class="form-group">
+            <label for="querytype" class="required"><span>Qurey Type</span></label>
+            <div class="query">
+                <input type="radio" name="querytype" id="general" value="General Enquiry">
+                <label for="general">General Enquiry</label>
+                <input type="radio" name="querytype" id="support" value="Support Request">
+                <label for="support">Support Request</label>
+                
+            </div>
+            
+            
+        </div>
+
+        
+
+        <div class="form-group">
+            <label for="message" class="required">Message</label>
+            <textarea id="message" name="message" ></textarea>
+        </div>
+
+        <div class="form-group">
+            <input type="checkbox" id="consent" name="consent">
+            <label for="consent" class="required">I consent to being contacted by the team </label>
+
+        </div>
+        <button type="submit">Submit</button>
     </form>
-    <p>Create a Page for a celebrity, brand, or business.</p>
-</div>
-  
+    
+
+        
+    
 </body>
-
 </html>

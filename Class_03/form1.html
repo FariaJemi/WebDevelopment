@@ -4,156 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!--<link rel="stylesheet" href="sty.css">-->
-    <style>
-    body {
-
-        background-color: #f0fff0;
-      
-        font-family: sans-serif;
-      
-      }
-      
-      
-      .container {
-      
-        width: 400px;
-      
-        margin: 0 auto;
-      
-        padding: 20px;
-      
-        border: 1px solid #ccc;
-      
-        border-radius: 5px;
-      
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      
-      }
-      
-      
-      h2 {
-      
-        text-align: center;
-      
-        margin-bottom: 20px;
-      
-        color: #333;
-      
-      }
-      
-      
-      label {
-      
-        display: block;
-      
-        margin-bottom: 5px;
-      
-        color: #333;
-      
-      }
-      
-      
-      input[type="text"],
-      
-      input[type="email"],
-      
-      textarea {
-      
-        width: 100%;
-      
-        padding: 10px;
-      
-        margin-bottom: 15px;
-      
-        border: 1px solid #ccc;
-      
-        border-radius: 3px;
-      
-        box-sizing: border-box;
-      
-      }
-      
-      
-      input[type="radio"] {
-      
-        margin-right: 5px;
-      
-      }
-      
-      
-      input[type="checkbox"] {
-      
-        margin-right: 5px;
-      
-      }
-      
-      
-      button {
-      
-        background-color: #2ecc71; /* Teal green */
-      
-        color: white;
-      
-        padding: 10px 20px;
-      
-        border: none;
-      
-        border-radius: 3px;
-      
-        cursor: pointer;
-      
-        width: 100%;
-      
-      }
-      
-      
-      button:hover {
-      
-        background-color: #27ae60; /* Slightly darker green on hover */
-      
-      }
-      
-      </style>
+    <link rel="stylesheet" href="stl.css">
 </head>
 <body>
-    <div class="container">
+    <div class="contact-form">  
 
-         <form action="">
-
-            <h2 class="log">Contact Us</h2>
-        
-            <label for="user">First Name *</label>
-            <input type="text"  id="user"  required>
-
-            <label for="user">Last Name *</label>
-            <input type="text"  id="user"  required>
-
-            <label for="email">Email Address *</label>
-            <input type="email"  id="email"  required>
-
-            <label for="qt">Query Type *</label>
-            <input type="radio" id="general" name="qt" value="General Enquiry" checked>
-            <label for="general">General Enquiry</label>
-            <input type="radio" id="support" name="qt" value="Support Request">
-            <label for="support">Support Request</label>
+        <h2>Contact Us</h2>
     
-            <label for="mess">Message *</label>
-            <textarea name="mess" id="mess" rows="4" required></textarea>
-            <input type="mess"  id="mess" required>
-
-            <input type="checkbox" id="consent" name="consent" required>
-            <label for="consent">I consent to being contacted by the team *</label>
-            
+        <div class="form-group">
+          <label for="first-name" class="required">First Name </label>
+          <input type="text" id="first-name" name="first-name" required>  
     
-            <button type="submit">Submit</button>
-        </form>
-
-    </div>
-
-   
-   
-   
+          <label for="last-name" class="required">Last Name </label>
+          <input type="text" id="last-name" name="last-name" required>  
     
+        </div>
+    
+        <div class="form-group">
+          <label for="email" class="required">Email Address </label>
+          <input type="email" id="email" name="email" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="query-type" class="required">Query Type </label>
+          <div class="query-options">
+            <input type="radio" id="general-enquiry" name="query-type" value="General Enquiry">
+            <label for="general-enquiry">General Enquiry</label>
+            <input type="radio" id="support-request" name="query-type" value="Support Request">
+            <label for="support-request">Support Request</label>
+          </div>
+        </div>
+    
+        <div class="form-group">
+          <label for="message" class="required">Message *</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+    
+        <div class="form-group">  
+    
+          <input type="checkbox" id="consent" name="consent">
+          <label for="consent" class="required">I consent to being contacted by the team </label>
+        </div>
+    
+        <button type="submit">Submit</button>
+      </div>
 </body>
 </html>
